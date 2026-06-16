@@ -1,0 +1,19 @@
+telegram:
+  api_id: 123456
+  api_hash: "your_api_hash"
+  session_name: "news_agent"
+  source_channels:
+    - "@example_channel"
+    - "https://t.me/example_channel_2"
+  target_chat: "@your_private_channel_or_chat"
+
+openai:
+  model: "gpt-4.1-mini"
+  embedding_model: "text-embedding-3-small"
+
+news:
+  lookback_hours: 24
+  max_messages_per_channel: 100
+  similarity_threshold: 0.82
+  min_text_length: 80
+  language: "ru"
